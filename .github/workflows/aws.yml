@@ -56,8 +56,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::455794406210:role/ecsExecutionRoleWine
-        role-session-name: ecsExecutionRoleWine
+        role-to-assume: arn:aws:iam::455794406210:role/AWSECSWine
+        role-session-name: AWSECSWine
         aws-region: ${{ env.AWS_REGION }}
 
     - name: Login to Amazon ECR
